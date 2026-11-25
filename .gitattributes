@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Los archivos se guardan byte a byte para que coincidan con MANIFIESTO_SHA256.json.
+* -text
