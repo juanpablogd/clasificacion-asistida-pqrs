@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "fecha": "2026-11-24",
+  "alcance": "Evidencia agregada y código, sin datos por solicitud; preparado para publicación en https://github.com/juanpablogd/clasificacion-asistida-pqrs",
+  "algoritmo": "SHA-256",
+  "archivos": {
+    "metadatos/barrido_clasico_metadata.json": {
+      "sha256": "d224818f729f30302e25182a80b359987af7f007d1e2ad9f41066891bb6fc87c",
+      "bytes": 7838,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/barrido_clasico/barrido_clasico_metadata.json",
+        "sha256": "a5f37bb9296f7cd00840c8984aae8e67ddba630a43b8986cc0ce460aff27edbd"
+      },
+      "transformacion": "Selección explícita de campos agregados; omisión recursiva de narrativas históricas; cifras sin recalcular"
+    },
+    "metadatos/barrido_rf_metadata.json": {
+      "sha256": "a38189604e6b9e6684a59ae5c05a000eaac780c3bc2dce74c41f2afe87382cce",
+      "bytes": 4579,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/barrido_clasico/barrido_rf_metadata.json",
+        "sha256": "dcbd1e51e5600810d92d7866b6f86c5b20b2f5398cb7e0c73f47476d11ade671"
+      },
+      "transformacion": "Selección explícita de campos agregados; omisión recursiva de narrativas históricas; cifras sin recalcular"
+    },
+    "metadatos/optuna_saturacion_metadata.json": {
+      "sha256": "b95193c15fc73ad9d63a9107db77c68198285216c48bfaf95ba2871dc9803929",
+      "bytes": 3994,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/optuna_saturacion/optuna_saturacion_metadata.json",
+        "sha256": "a7d24ab74202d2ab5bb57bad58edd7606e724feed33932edf299aa1e8c7fc6be"
+      },
+      "transformacion": "Selección explícita de campos agregados; omisión recursiva de narrativas históricas; cifras sin recalcular"
+    },
+    "metadatos/ensamble_exploratorio_metadata.json": {
+      "sha256": "670cbf291a761d0868bb6cac2efce0ce77e99aa1f39aaee0a7818719b403fc0b",
+      "bytes": 3732,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/ensamble/ensamble_metadata.json",
+        "sha256": "7839c3f668582aad2f726d674f58ca8e82e2c3a94d8eff5d05780991bd4a431f"
+      },
+      "transformacion": "Selección explícita de campos agregados; omisión recursiva de narrativas históricas; cifras sin recalcular"
+    },
+    "metadatos/ensamble_validacion_metadata.json": {
+      "sha256": "bc99f3226c7733c77072b812b59ed699d845395dc006e466b25ded41f433bc51",
+      "bytes": 4819,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/ensamble/ensamble_peso_validacion_metadata.json",
+        "sha256": "f3f2ce8dc331f2d2703df5da731bd0b873190c6c15aad5b3c5fa34f23b29637e"
+      },
+      "transformacion": "Selección explícita de campos agregados; omisión recursiva de narrativas históricas; cifras sin recalcular"
+    },
+    "metadatos/calibracion_metadata.json": {
+      "sha256": "265073da9438c442f9558c764bd822c096661808a87a81cd9b6f8c79722012e7",
+      "bytes": 2030,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/calibracion/calibracion_metadata.json",
+        "sha256": "1d177bb82693a15cdc3cabcfb95b99dc0aa4a2d4f69837d0e1c78527bbf15854"
+      },
+      "transformacion": "Selección explícita de campos agregados; omisión recursiva de narrativas históricas; cifras sin recalcular"
+    },
+    "metadatos/revision_general_20261124.json": {
+      "sha256": "3189bb370ba00a824af8c184c14b0c8eeef2b5b8100dceaa54ca20be60d89192",
+      "bytes": 5191,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Entregables/09_Revision_Tutor_20261124/REVISION_GENERAL_20261124.json",
+        "sha256": "551bb4431de05ce5a657d7f0441cecc7607d51aabe604ba0eebd7eb4e7514853"
+      },
+      "transformacion": "Selección explícita de campos agregados; omisión recursiva de narrativas históricas; cifras sin recalcular"
+    },
+    "tablas/fiabilidad_bins.csv": {
+      "sha256": "22d29f644bef6d1cf0b3d344b03c4efd72a7f9a4488da171445fb37ecf8a9d21",
+      "bytes": 424,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/calibracion/fiabilidad_bins.csv",
+        "sha256": "22d29f644bef6d1cf0b3d344b03c4efd72a7f9a4488da171445fb37ecf8a9d21"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "tablas/fiabilidad_bins_sin_calibrar.csv": {
+      "sha256": "e3c9e9139c9d433d10763b7258cc10114896c3e114d5f0812dd3705bf48a82c3",
+      "bytes": 428,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/calibracion/fiabilidad_bins_sin_calibrar.csv",
+        "sha256": "e3c9e9139c9d433d10763b7258cc10114896c3e114d5f0812dd3705bf48a82c3"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "tablas/cobertura_precision.csv": {
+      "sha256": "c8a9679e542d1908890a68c63b3ae304c407eed1f363817cd3f22ff4487021ab",
+      "bytes": 1887,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/calibracion/cobertura_precision.csv",
+        "sha256": "c8a9679e542d1908890a68c63b3ae304c407eed1f363817cd3f22ff4487021ab"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "tablas/pr_por_clase.csv": {
+      "sha256": "4cfeb898f0bed5c3cc9c7dee3410cdf63052bddc8e2ab2699ad4a6d77cd44d16",
+      "bytes": 2543,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/artifacts/cierre_baseline/pr_por_clase.csv",
+        "sha256": "4cfeb898f0bed5c3cc9c7dee3410cdf63052bddc8e2ab2699ad4a6d77cd44d16"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/barrido_clasico_tfidf.py": {
+      "sha256": "c49a3496ce9e85f76087d2a778e455150cea0f2a50495eb8032189b41df6a48f",
+      "bytes": 26516,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/barrido_clasico_tfidf.py",
+        "sha256": "c49a3496ce9e85f76087d2a778e455150cea0f2a50495eb8032189b41df6a48f"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/barrido_clasico_rf.py": {
+      "sha256": "5a668dddb5d8f9b5c4c103083ebc5be0c7aa420ba475427179267d4769185ff4",
+      "bytes": 16251,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/barrido_clasico_rf.py",
+        "sha256": "5a668dddb5d8f9b5c4c103083ebc5be0c7aa420ba475427179267d4769185ff4"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/optuna_saturacion.py": {
+      "sha256": "8a156ddad30d09e4b0e376d24e307c5d635906fc63fe75722153afeea1d0ddff",
+      "bytes": 9122,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/optuna_saturacion.py",
+        "sha256": "8a156ddad30d09e4b0e376d24e307c5d635906fc63fe75722153afeea1d0ddff"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/calibracion_y_cobertura.py": {
+      "sha256": "79c91925a5333890f4732a271d176b33110188508a5c84f38679696f4fa52b1d",
+      "bytes": 18870,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/calibracion_y_cobertura.py",
+        "sha256": "79c91925a5333890f4732a271d176b33110188508a5c84f38679696f4fa52b1d"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/ensamble_baseline_mrbert.py": {
+      "sha256": "76be10aa92589306e619b07e518e4535836c3ffd5d54d85218eeffacb3437233",
+      "bytes": 16481,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/ensamble_baseline_mrbert.py",
+        "sha256": "76be10aa92589306e619b07e518e4535836c3ffd5d54d85218eeffacb3437233"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/ensamble_peso_en_validacion.py": {
+      "sha256": "cc26018b98cff2fce7902a73d471c0147cf63d1bfd3dd71b58b9634eeb4f821d",
+      "bytes": 10077,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/ensamble_peso_en_validacion.py",
+        "sha256": "cc26018b98cff2fce7902a73d471c0147cf63d1bfd3dd71b58b9634eeb4f821d"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/canonical_split.py": {
+      "sha256": "604548ae70a842fda19c04488c4c249206af0ec0579ee5abd7f6454ee7bc942b",
+      "bytes": 8218,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/canonical_split.py",
+        "sha256": "604548ae70a842fda19c04488c4c249206af0ec0579ee5abd7f6454ee7bc942b"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Entregables/09_Revision_Tutor_20261124/verificar_revision_general.py": {
+      "sha256": "11bbf061ba6ce97cc096a5774e11d49208cd28ce84d7bea30ed4b93469dcc9df",
+      "bytes": 11164,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Entregables/09_Revision_Tutor_20261124/verificar_revision_general.py",
+        "sha256": "11bbf061ba6ce97cc096a5774e11d49208cd28ce84d7bea30ed4b93469dcc9df"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/verificar_contenido_particion.py": {
+      "sha256": "64211947c984e5eb44007ec64485ce682ca1ed1f3491dc5ab5591c2363770698",
+      "bytes": 5721,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/verificar_contenido_particion.py",
+        "sha256": "64211947c984e5eb44007ec64485ce682ca1ed1f3491dc5ab5591c2363770698"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Proyecto/Scripts/analisis_longitud_y_tipo.py": {
+      "sha256": "3c21c205515732b073ffe919f0ede8b1e3804bc2eb9cf21156b728fba784fc13",
+      "bytes": 8769,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Scripts/analisis_longitud_y_tipo.py",
+        "sha256": "3c21c205515732b073ffe919f0ede8b1e3804bc2eb9cf21156b728fba784fc13"
+      },
+      "transformacion": "Copia exacta"
+    },
+    "codigo/Busqueda_historica_fragmento.py": {
+      "sha256": "fe51953d71a234deb312ee60355aa3eba8279bbeda796009e2078764f79a8f2a",
+      "bytes": 2537,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Notebooks/01_entrenamiento_base_pqrs.ipynb",
+        "sha256": "f1ae32a3e5744c46b5db557aba1fae85095823758e4db288851e87b3750fbd6c"
+      },
+      "transformacion": "Extracción literal de source de celda 16 (base cero); encabezado de dependencias; sin outputs ni datos"
+    },
+    "README.md": {
+      "sha256": "06a535c738d629b36afe9c463c281f71d361ace8215af82484fe2620a139d7bf",
+      "bytes": 8727,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Entregables/09_Revision_Tutor_20261124/generar_evidencias.py",
+        "sha256": "38883f344aa1234d44699461c1f6bc5e7d5b2825c4b2027a32ebfac4fd084137"
+      },
+      "transformacion": "Documentación del repositorio generada por generar_evidencias.py"
+    },
+    "LICENSE": {
+      "sha256": "9c1c9bbeb6d33e6bb3f83567c4a882db0e45d08d8fcc9af13aeb9bc84c911c0a",
+      "bytes": 1144,
+      "fuente": {
+        "ruta_repositorio": "Proyecto/Entregables/09_Revision_Tutor_20261124/generar_evidencias.py",
+        "sha256": "38883f344aa1234d44699461c1f6bc5e7d5b2825c4b2027a32ebfac4fd084137"
+      },
+      "transformacion": "Licencia MIT del código, generada por generar_evidencias.py"
+    }
+  },
+  "nota": "El manifiesto no se incluye a sí mismo. Las fuentes se identifican sin redistribuir sus contenidos completos cuando hubo curación."
+}

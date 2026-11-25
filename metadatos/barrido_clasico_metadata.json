@@ -1,0 +1,300 @@
+{
+  "generado": "2026-09-05T15:00:19",
+  "regla_de_adopcion_preregistrada": {
+    "umbral_f1_macro": 0.0306,
+    "origen_del_umbral": "dos veces la desviacion multi-semilla del baseline (F1 macro 0.5241 +/- 0.0153 en 5 particiones)",
+    "condicion_adicional": "IC 95 % pareado que no cruce cero",
+    "fijada_antes_de_correr": true
+  },
+  "entorno": {
+    "python": "3.10.12",
+    "plataforma": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+    "sklearn": "1.7.2",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3"
+  },
+  "data_sha256": "17af0cd4589f276125c3cb9dd6b44c8291c3f9708867e121773440a05aa9850e",
+  "split_fingerprints_sha256": {
+    "train": "1796ce7e65484352e889cb3256065dad2ea2129d31b50ce2f9087e0eac21a7bb",
+    "validation": "afcb58957176c2a1bba2ce03ae35bf4bc83816a50203d5aba409dfa5ceca588f",
+    "test": "9b363104e8d1621fcda0b80d30d0c1fa2545dcfce13566d703adaa0adaaa5a64"
+  },
+  "split": {
+    "train_rows": 34628,
+    "valid_rows": 4328,
+    "test_rows": 4329,
+    "n_clases": 42,
+    "seed": 42
+  },
+  "representacion": {
+    "tfidf": {
+      "strip_accents": "unicode",
+      "lowercase": true,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 1,
+      "max_df": 0.9,
+      "sublinear_tf": true
+    },
+    "n_rasgos": 227980
+  },
+  "resultados_test": [
+    {
+      "modelo": "TF-IDF + LinearSVC",
+      "f1_macro": 0.5349983077672827,
+      "balanced_accuracy": 0.5632688222899733,
+      "accuracy": 0.7246477246477246,
+      "top3_accuracy": 0.8486948486948487,
+      "f1_weighted": 0.7300164812241898,
+      "familia": "linearsvc",
+      "mejores_params": {
+        "C": 1.0
+      },
+      "f1_macro_validacion": 0.48625421471809416,
+      "seleccion": "F1 macro en validacion (4328 filas)"
+    },
+    {
+      "modelo": "TF-IDF + ComplementNB",
+      "f1_macro": 0.525798596047276,
+      "balanced_accuracy": 0.47794842161620044,
+      "accuracy": 0.7188727188727189,
+      "top3_accuracy": 0.8514668514668514,
+      "f1_weighted": 0.7092630612223704,
+      "familia": "cnb",
+      "mejores_params": {
+        "alpha": 0.1
+      },
+      "f1_macro_validacion": 0.47316618339065564,
+      "seleccion": "F1 macro en validacion (4328 filas)"
+    },
+    {
+      "modelo": "TF-IDF + SGD (hinge)",
+      "f1_macro": 0.5209100168866223,
+      "balanced_accuracy": 0.5124047655375629,
+      "accuracy": 0.7149457149457149,
+      "top3_accuracy": 0.8382998382998383,
+      "f1_weighted": 0.7149053865133794,
+      "familia": "sgd_hinge",
+      "mejores_params": {
+        "alpha": 1e-06
+      },
+      "f1_macro_validacion": 0.4768736440313907,
+      "seleccion": "F1 macro en validacion (4328 filas)"
+    },
+    {
+      "modelo": "TF-IDF + SGD (log_loss)",
+      "f1_macro": 0.5344817303594513,
+      "balanced_accuracy": 0.5185534065259558,
+      "accuracy": 0.7276507276507277,
+      "top3_accuracy": 0.8581658581658582,
+      "f1_weighted": 0.7270912511041846,
+      "familia": "sgd_log",
+      "mejores_params": {
+        "alpha": 1e-06
+      },
+      "f1_macro_validacion": 0.4698015724279795,
+      "seleccion": "F1 macro en validacion (4328 filas)"
+    },
+    {
+      "modelo": "TF-IDF + SVD (LSA) + LinearSVC",
+      "f1_macro": 0.3891085729560126,
+      "balanced_accuracy": 0.48828418512607447,
+      "accuracy": 0.6038346038346039,
+      "top3_accuracy": 0.762993762993763,
+      "f1_weighted": 0.64481303899603,
+      "familia": "svd_linearsvc",
+      "mejores_params": {
+        "n_components": 600,
+        "C": 1.0
+      },
+      "f1_macro_validacion": 0.38864197455779487,
+      "seleccion": "F1 macro en validacion (4328 filas)"
+    },
+    {
+      "modelo": "TF-IDF + LogisticRegression (control)",
+      "familia": "control",
+      "f1_macro": 0.5455370598338695,
+      "balanced_accuracy": 0.5542135478251632,
+      "accuracy": 0.705936705936706,
+      "top3_accuracy": 0.8507738507738508,
+      "f1_weighted": 0.7128821777324771,
+      "mejores_params": {
+        "tfidf__sublinear_tf": true,
+        "tfidf__ngram_range": [
+          1,
+          2
+        ],
+        "tfidf__min_df": 1,
+        "tfidf__max_df": 0.9,
+        "clf__C": 8.0
+      },
+      "seleccion": "RandomizedSearchCV previo (12 iter x 3 folds)"
+    }
+  ],
+  "detalle_validacion": [
+    {
+      "modelo": "TF-IDF + LinearSVC",
+      "params": {
+        "C": 0.1
+      },
+      "f1_macro_validacion": 0.46066745779833745,
+      "segundos": 6.5
+    },
+    {
+      "modelo": "TF-IDF + LinearSVC",
+      "params": {
+        "C": 0.25
+      },
+      "f1_macro_validacion": 0.46431080486983384,
+      "segundos": 6.9
+    },
+    {
+      "modelo": "TF-IDF + LinearSVC",
+      "params": {
+        "C": 0.5
+      },
+      "f1_macro_validacion": 0.4819083460909609,
+      "segundos": 8.0
+    },
+    {
+      "modelo": "TF-IDF + LinearSVC",
+      "params": {
+        "C": 1.0
+      },
+      "f1_macro_validacion": 0.48625421471809416,
+      "segundos": 10.0
+    },
+    {
+      "modelo": "TF-IDF + LinearSVC",
+      "params": {
+        "C": 2.0
+      },
+      "f1_macro_validacion": 0.4761185723154521,
+      "segundos": 13.9
+    },
+    {
+      "modelo": "TF-IDF + LinearSVC",
+      "params": {
+        "C": 4.0
+      },
+      "f1_macro_validacion": 0.47229614178709894,
+      "segundos": 17.5
+    },
+    {
+      "modelo": "TF-IDF + ComplementNB",
+      "params": {
+        "alpha": 0.01
+      },
+      "f1_macro_validacion": 0.46060393196661553,
+      "segundos": 0.5
+    },
+    {
+      "modelo": "TF-IDF + ComplementNB",
+      "params": {
+        "alpha": 0.05
+      },
+      "f1_macro_validacion": 0.46932140982016873,
+      "segundos": 0.5
+    },
+    {
+      "modelo": "TF-IDF + ComplementNB",
+      "params": {
+        "alpha": 0.1
+      },
+      "f1_macro_validacion": 0.47316618339065564,
+      "segundos": 0.4
+    },
+    {
+      "modelo": "TF-IDF + ComplementNB",
+      "params": {
+        "alpha": 0.3
+      },
+      "f1_macro_validacion": 0.4550329861754697,
+      "segundos": 0.4
+    },
+    {
+      "modelo": "TF-IDF + ComplementNB",
+      "params": {
+        "alpha": 1.0
+      },
+      "f1_macro_validacion": 0.40261705216006227,
+      "segundos": 0.4
+    },
+    {
+      "modelo": "TF-IDF + SGD (hinge)",
+      "params": {
+        "alpha": 1e-06
+      },
+      "f1_macro_validacion": 0.4768736440313907,
+      "segundos": 5.9
+    },
+    {
+      "modelo": "TF-IDF + SGD (hinge)",
+      "params": {
+        "alpha": 1e-05
+      },
+      "f1_macro_validacion": 0.4641426600596324,
+      "segundos": 5.4
+    },
+    {
+      "modelo": "TF-IDF + SGD (hinge)",
+      "params": {
+        "alpha": 0.0001
+      },
+      "f1_macro_validacion": 0.4339430944174477,
+      "segundos": 3.8
+    },
+    {
+      "modelo": "TF-IDF + SGD (hinge)",
+      "params": {
+        "alpha": 0.001
+      },
+      "f1_macro_validacion": 0.3904770970793888,
+      "segundos": 2.3
+    },
+    {
+      "modelo": "TF-IDF + SGD (log_loss)",
+      "params": {
+        "alpha": 1e-06
+      },
+      "f1_macro_validacion": 0.4698015724279795,
+      "segundos": 5.1
+    },
+    {
+      "modelo": "TF-IDF + SGD (log_loss)",
+      "params": {
+        "alpha": 1e-05
+      },
+      "f1_macro_validacion": 0.4627618646566019,
+      "segundos": 4.9
+    },
+    {
+      "modelo": "TF-IDF + SGD (log_loss)",
+      "params": {
+        "alpha": 0.0001
+      },
+      "f1_macro_validacion": 0.4110634644337929,
+      "segundos": 4.5
+    },
+    {
+      "modelo": "TF-IDF + SGD (log_loss)",
+      "params": {
+        "alpha": 0.001
+      },
+      "f1_macro_validacion": 0.3117262427732871,
+      "segundos": 6.2
+    },
+    {
+      "modelo": "TF-IDF + SVD (LSA) + LinearSVC",
+      "params": {
+        "n_components": 600,
+        "C": 1.0
+      },
+      "f1_macro_validacion": 0.38864197455779487,
+      "segundos": 102.7
+    }
+  ],
+  "_criterio_de_lectura": "Barrido clásico: hiperparámetros elegidos por F1 macro en validación; métricas finales en prueba canónica."
+}

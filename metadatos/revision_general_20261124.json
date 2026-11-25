@@ -1,0 +1,129 @@
+{
+  "fecha": "2026-11-24",
+  "modelos_reentrenados": false,
+  "metricas_recalculadas": {
+    "lineal": {
+      "f1_macro": 0.5455370598338695,
+      "exactitud": 0.705936705936706,
+      "exactitud_balanceada": 0.5542135478251632,
+      "top3": 0.8507738507738508
+    },
+    "mrbert_reinferido": {
+      "f1_macro": 0.5267705143766618,
+      "exactitud": 0.7110187110187111,
+      "exactitud_balanceada": 0.5102037240616063,
+      "top3": 0.8466158466158467
+    }
+  },
+  "discordancias": {
+    "solo_lineal": 320,
+    "solo_mrbert": 342,
+    "fallos_conjuntos": 931,
+    "oraculo_top1": 0.7849387849387849
+  },
+  "cobertura": {
+    "sin_calibrar": {
+      "umbral_0_70": {
+        "n": 2102,
+        "cobertura": 0.48556248556248555,
+        "top1": 0.9253092293054234,
+        "top3": 0.9790675547098002,
+        "top1_excluidos": 0.4988774135608442
+      },
+      "umbrales_0_35_y_0_08": {
+        "n": 3229,
+        "cobertura": 0.745899745899746,
+        "top1": 0.8247135336017343,
+        "top3": 0.9346546918550634,
+        "top1_excluidos": 0.3572727272727273
+      }
+    },
+    "calibrada": {
+      "umbral_0_70": {
+        "n": 2404,
+        "cobertura": 0.5553245553245554,
+        "top1": 0.9059900166389351,
+        "top3": 0.9717138103161398,
+        "top1_excluidos": 0.4561038961038961
+      },
+      "umbrales_0_35_y_0_08": {
+        "n": 3463,
+        "cobertura": 0.7999537999538,
+        "top1": 0.8021946289344499,
+        "top3": 0.9185677158533064,
+        "top1_excluidos": 0.3210161662817552
+      }
+    }
+  },
+  "piloto": {
+    "validaciones": 250,
+    "casos_unicos": 247,
+    "solapamientos": {
+      "A_B": 0,
+      "A_C": 2,
+      "B_C": 1
+    },
+    "B": {
+      "n": 49,
+      "decidibles": 49,
+      "desacuerdos_historico": 0,
+      "top1_decidibles": 36,
+      "top3_decidibles": 44,
+      "indecidibles": 0
+    },
+    "C": {
+      "n": 71,
+      "decidibles": 59,
+      "desacuerdos_historico": 31,
+      "top1_decidibles": 29,
+      "top3_decidibles": 33,
+      "indecidibles": 12
+    },
+    "C_sin_casos_compartidos": {
+      "n": 68,
+      "decidibles": 57,
+      "desacuerdos_historico": 30,
+      "top1_decidibles": 29,
+      "top3_decidibles": 32,
+      "indecidibles": 11
+    },
+    "fisher_original": 9.44713016805656e-11,
+    "fisher_sin_casos_compartidos": 6.833503093019676e-11,
+    "limite": "Análisis posterior; excluir casos compartidos no controla el orden de exposición ni la experiencia del único revisor."
+  },
+  "consolidacion_temporal": {
+    "alcance": "Agrupación TIPO+ASUNTO; etiquetas normalizadas como canonical_split.py; solo cifras agregadas.",
+    "grupos_antes_filtros": 43629,
+    "grupos_ambos_anios_antes_filtros": 284,
+    "grupos_ambos_anios_etiquetas_distintas_antes_filtros": 166,
+    "registros_consolidados": 43285,
+    "asignados_a_2020": 19422,
+    "asignados_a_2021": 23863,
+    "grupos_ambos_anios_retenidos": 240,
+    "etiquetas_2020_distintas_al_consolidar_solo_2020": 77
+  },
+  "correcciones_documentales": [
+    "Se acota el oráculo a elegir entre predicciones top-1, sin presentarlo como límite de cualquier ensamble.",
+    "Se distinguen discrepancias entre duplicados, error empírico restringido y error irreducible poblacional.",
+    "Se separa la calibración retrospectiva de las probabilidades sin calibrar usadas por el prototipo.",
+    "Se declara la exploración de umbrales sobre prueba y la necesidad de una nueva evaluación con la regla fijada.",
+    "Se documentan el solapamiento del piloto y la consolidación anterior al corte temporal.",
+    "Se retiran inferencias de equivalencia, causalidad y ausencia de aporte que los contrastes no establecen.",
+    "Se ajustan las declaraciones de derechos y control humano al reglamento institucional y a la evidencia obtenida.",
+    "Se corrigen un comando LaTeX dañado y una frase duplicada; se acortan títulos del índice y se revisa la colocación de figuras."
+  ],
+  "fuente_normativa": {
+    "titulo": "Universidad de La Salle, Acuerdo 025 de 2021, artículos 18 a 20",
+    "url": "https://lasalle.edu.co/es/normatividad/propiedad-intelectual",
+    "pdf": "https://cmspreprod.lasalle.edu.co/sites/default/files/2024-08/7_1_ACS-No-025-de-2021.pdf",
+    "verificacion": "Texto y páginas 8 y 9 inspeccionados; no se presume una cesión general de derechos."
+  },
+  "fuentes_sha256": {
+    "Proyecto/artifacts/ensamble/probabilidades_test_4329.npz": "8232b0a7c55712deb7c75bf27b5f89ae144e5d8725f7a2d34e294d5b33183673",
+    "Proyecto/artifacts/hitl/feedback.csv": "bb49b892236c2bcb4301010b69367ac68962ec8425772d7982d0d3af4ca29a99",
+    "data/Registro_PQRS_Mindeportes_20260328.csv": "17af0cd4589f276125c3cb9dd6b44c8291c3f9708867e121773440a05aa9850e",
+    "Proyecto/canonical_split.py": "604548ae70a842fda19c04488c4c249206af0ec0579ee5abd7f6454ee7bc942b",
+    "Proyecto/app_gradio.py": "5c82372d8599af7a45f8c5af2766fa2c11be851300bb7891239e19cf9ebb4e5e"
+  },
+  "_criterio_de_lectura": "Auditoría posterior del 24/11/2026: recálculo de métricas a partir de predicciones conservadas, sensibilidad al solapamiento de casos humanos y diagnóstico de consolidación anterior al corte temporal. No modifica experimentos ni reentrena modelos."
+}

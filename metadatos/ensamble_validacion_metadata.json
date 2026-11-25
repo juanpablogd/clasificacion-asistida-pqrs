@@ -1,0 +1,156 @@
+{
+  "metrica_de_seleccion": "f1_macro",
+  "barrido_en_validacion": [
+    {
+      "f1_macro": 0.48490031660668154,
+      "balanced_accuracy": 0.46762844476184984,
+      "accuracy": 0.7208872458410351,
+      "top3_accuracy": 0.8518946395563771,
+      "f1_weighted": 0.7141157447175547,
+      "peso": "0.0"
+    },
+    {
+      "f1_macro": 0.48584530138497956,
+      "balanced_accuracy": 0.46787972691769053,
+      "accuracy": 0.7213493530499075,
+      "top3_accuracy": 0.8662199630314233,
+      "f1_weighted": 0.71446812954682,
+      "peso": "0.1"
+    },
+    {
+      "f1_macro": 0.48725078594232857,
+      "balanced_accuracy": 0.4688291903125959,
+      "accuracy": 0.7218114602587801,
+      "top3_accuracy": 0.8717652495378928,
+      "f1_weighted": 0.7151561681334907,
+      "peso": "0.2"
+    },
+    {
+      "f1_macro": 0.49044905107011755,
+      "balanced_accuracy": 0.4714245197721625,
+      "accuracy": 0.7255083179297597,
+      "top3_accuracy": 0.8736136783733827,
+      "f1_weighted": 0.7190081299246621,
+      "peso": "0.3"
+    },
+    {
+      "f1_macro": 0.486472341758519,
+      "balanced_accuracy": 0.46946981254851383,
+      "accuracy": 0.7275878003696857,
+      "top3_accuracy": 0.8752310536044362,
+      "f1_weighted": 0.7213399985080874,
+      "peso": "0.4"
+    },
+    {
+      "f1_macro": 0.49654521818803543,
+      "balanced_accuracy": 0.4796821760284211,
+      "accuracy": 0.7310536044362292,
+      "top3_accuracy": 0.8745378927911276,
+      "f1_weighted": 0.7255956119280398,
+      "peso": "0.5"
+    },
+    {
+      "f1_macro": 0.5036661640924635,
+      "balanced_accuracy": 0.4891626705146021,
+      "accuracy": 0.7356746765249538,
+      "top3_accuracy": 0.8736136783733827,
+      "f1_weighted": 0.7316527570750779,
+      "peso": "0.6"
+    },
+    {
+      "f1_macro": 0.5013171659126472,
+      "balanced_accuracy": 0.48809276325910483,
+      "accuracy": 0.7345194085027726,
+      "top3_accuracy": 0.8731515711645101,
+      "f1_weighted": 0.7313537419348595,
+      "peso": "0.7"
+    },
+    {
+      "f1_macro": 0.5006436310174303,
+      "balanced_accuracy": 0.49074646482172296,
+      "accuracy": 0.7342883548983364,
+      "top3_accuracy": 0.871996303142329,
+      "f1_weighted": 0.7318177610293577,
+      "peso": "0.75"
+    },
+    {
+      "f1_macro": 0.491841026839576,
+      "balanced_accuracy": 0.4863734223068278,
+      "accuracy": 0.7285120147874307,
+      "top3_accuracy": 0.868992606284658,
+      "f1_weighted": 0.7268412875874474,
+      "peso": "0.8"
+    },
+    {
+      "f1_macro": 0.4817715615475657,
+      "balanced_accuracy": 0.4796310650008594,
+      "accuracy": 0.7162661737523105,
+      "top3_accuracy": 0.8646025878003697,
+      "f1_weighted": 0.7165498298103162,
+      "peso": "0.9"
+    },
+    {
+      "f1_macro": 0.4713051283581783,
+      "balanced_accuracy": 0.4757143817327913,
+      "accuracy": 0.6980129390018485,
+      "top3_accuracy": 0.8505083179297597,
+      "f1_weighted": 0.7014956002369976,
+      "peso": "1.0"
+    },
+    {
+      "f1_macro": 0.506063850227632,
+      "balanced_accuracy": 0.48291379315676836,
+      "accuracy": 0.7241219963031423,
+      "top3_accuracy": 0.8722273567467652,
+      "f1_weighted": 0.7205469553784832,
+      "peso": "rangos"
+    }
+  ],
+  "peso_elegido": "rangos",
+  "test": {
+    "baseline_b": {
+      "f1_macro": 0.5455370598338695,
+      "balanced_accuracy": 0.5542135478251632,
+      "accuracy": 0.705936705936706,
+      "top3_accuracy": 0.8507738507738508,
+      "f1_weighted": 0.7128821777324771
+    },
+    "mrbert_es": {
+      "f1_macro": 0.5267705143766618,
+      "balanced_accuracy": 0.5102037240616063,
+      "accuracy": 0.7110187110187111,
+      "top3_accuracy": 0.8466158466158467,
+      "f1_weighted": 0.7062702488450385
+    },
+    "ensamble_rangos": {
+      "f1_macro": 0.5624307912320198,
+      "balanced_accuracy": 0.5395328822472232,
+      "accuracy": 0.7232617232617232,
+      "top3_accuracy": 0.8711018711018711,
+      "f1_weighted": 0.72365721717087
+    }
+  },
+  "pruebas_pareadas": [
+    {
+      "comparacion": "Ensamble(rangos) vs Baseline B",
+      "diferencia_f1_macro": 0.016894,
+      "ci95_low": -0.001007,
+      "ci95_high": 0.033037,
+      "mcnemar_p_value": 0.0001440407970857427,
+      "discordantes_a_gana": 227,
+      "discordantes_b_gana": 152,
+      "significativo": false
+    },
+    {
+      "comparacion": "Ensamble(rangos) vs MrBERT-es",
+      "diferencia_f1_macro": 0.03566,
+      "ci95_low": 0.01165,
+      "ci95_high": 0.055701,
+      "mcnemar_p_value": 0.005920867799582452,
+      "discordantes_a_gana": 205,
+      "discordantes_b_gana": 152,
+      "significativo": true
+    }
+  ],
+  "_criterio_de_lectura": "Peso elegido en validación (4.328); evaluación en test canónico (4.329). Frente al lineal, el IC de F1 macro cruza cero; McNemar de top-1 sí es significativo. No hay prueba pareada propia de top-3."
+}

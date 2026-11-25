@@ -1,0 +1,71 @@
+{
+  "n_test": 4329,
+  "n_validacion": 4328,
+  "temperatura": {
+    "T": 0.8545,
+    "ajustada_en": "validation (4328 filas)",
+    "nll_validacion": 1.1579
+  },
+  "calibracion_test": {
+    "sin_calibrar": {
+      "confianza_media": 0.6359,
+      "accuracy": 0.7059,
+      "brecha_accuracy_menos_confianza": 0.0701,
+      "ece": 0.0731,
+      "brier": 0.4232
+    },
+    "calibrado": {
+      "confianza_media": 0.6937,
+      "accuracy": 0.7059,
+      "ece": 0.0356,
+      "brier": 0.4144
+    },
+    "mejora_ece": 0.0375
+  },
+  "prediccion_selectiva": {
+    "criterio": "confianza calibrada",
+    "umbrales_por_objetivo_de_precision": {
+      "precision_80": {
+        "objetivo_precision": 0.8,
+        "umbral": 0.4,
+        "cobertura": 0.7792,
+        "n_cubiertos": 3373,
+        "precision_top1": 0.8085
+      },
+      "precision_85": {
+        "objetivo_precision": 0.85,
+        "umbral": 0.55,
+        "cobertura": 0.6662,
+        "n_cubiertos": 2884,
+        "precision_top1": 0.8634
+      },
+      "precision_90": {
+        "objetivo_precision": 0.9,
+        "umbral": 0.7,
+        "cobertura": 0.5553,
+        "n_cubiertos": 2404,
+        "precision_top1": 0.906
+      },
+      "precision_95": {
+        "objetivo_precision": 0.95,
+        "umbral": 0.95,
+        "cobertura": 0.3105,
+        "n_cubiertos": 1344,
+        "precision_top1": 0.968
+      }
+    }
+  },
+  "umbrales_del_prototipo": {
+    "low_confidence": 0.35,
+    "max_margin": 0.08,
+    "cobertura_no_marcada_confusa": 0.8,
+    "precision_top1_no_marcada": 0.8022,
+    "precision_top1_marcada_confusa": 0.321
+  },
+  "control_identidad_filas": {
+    "accuracy_npz": 0.7059,
+    "accuracy_reinferido": 0.7059,
+    "delta": 0.0
+  },
+  "_criterio_de_lectura": "Temperatura ajustada en validación; umbrales explorados retrospectivamente en prueba. La calibración no se incorporó a la versión del prototipo usada en el piloto. umbrales_del_prototipo reaplica los valores 0,35 y 0,08 sobre puntajes calibrados, no sobre la escala original de la aplicación."
+}
